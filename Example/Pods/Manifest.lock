@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - OpenBin (0.1.0):
+    - AFNetworking
+    - FMDB
+
+DEPENDENCIES:
+  - OpenBin (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FMDB
+
+EXTERNAL SOURCES:
+  OpenBin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  OpenBin: 925ded3ed87e90c628559bb754fc6e0ab28c3a79
+
+PODFILE CHECKSUM: e8cfa42e0aa0b87d421dd1bd8422886ed391b57c
+
+COCOAPODS: 1.10.1

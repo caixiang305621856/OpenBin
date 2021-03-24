@@ -38,10 +38,10 @@
 
 /* Begin PBXFileReference section */
 		0B03281425F24A56CECBE1BD /* Pods_OpenBin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2100F908B6FCE4FE49003058 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2100F908B6FCE4FE49003058 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		38CF73DA1F7DDD880C5C7468 /* Pods_OpenBin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4093F4190AD8FC61E4CDFA57 /* Pods-OpenBin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBin_Example.debug.xcconfig"; path = "Target Support Files/Pods-OpenBin_Example/Pods-OpenBin_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		534A618EB925C7077A2AE3DF /* OpenBin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenBin.podspec; path = ../OpenBin.podspec; sourceTree = "<group>"; };
+		534A618EB925C7077A2AE3DF /* OpenBin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OpenBin.podspec; path = ../OpenBin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* OpenBin_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBin_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		75C55C0B7C01097F08857865 /* Pods-OpenBin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBin_Tests.release.xcconfig"; path = "Target Support Files/Pods-OpenBin_Tests/Pods-OpenBin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D4901D22BC0486D08BC3ECA /* Pods-OpenBin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBin_Example.release.xcconfig"; path = "Target Support Files/Pods-OpenBin_Example/Pods-OpenBin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8F24593B5BDD17F9615A95ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8F24593B5BDD17F9615A95ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E258DE52D16BA11C779D2B39 /* Pods-OpenBin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBin_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBin_Tests/Pods-OpenBin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				E258DE52D16BA11C779D2B39 /* Pods-OpenBin_Tests.debug.xcconfig */,
 				75C55C0B7C01097F08857865 /* Pods-OpenBin_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OpenBin_Example/Pods-OpenBin_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/OpenBin/OpenBin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenBin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,10 @@
+source 'https://cdn.cocoapods.org/'
 use_frameworks!
 
 platform :ios, '9.0'
+
+plugin 'cocoapods-imy-bin'
+use_binaries!
 
 target 'OpenBin_Example' do
   pod 'OpenBin', :path => '../'

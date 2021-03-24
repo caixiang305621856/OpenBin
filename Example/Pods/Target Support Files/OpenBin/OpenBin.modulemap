@@ -1,0 +1,6 @@
+framework module OpenBin {
+  umbrella header "OpenBin-umbrella.h"
+
+  export *
+  module * { export * }
+}
